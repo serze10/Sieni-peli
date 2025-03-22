@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sienipeli</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
 </head>
-<body>
-    <h1>Welcome to My Python Game!</h1>
-    <script src="path/to/your/game.js"></script>
+<body onload="brython()">
+    <h1>Tervetuloa Sienipeliin!</h1>
+    <script type="text/python">
+        # Sienipeli.py -koodisi tähän
+        from browser import document, html
+
+        def main():
+            document <= html.H2("Tämä on Sienipeli!")
+
+        main()
+    </script>
 </body>
 </html>
